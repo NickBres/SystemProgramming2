@@ -6,7 +6,7 @@ int main(){
     char c = '0';
     int a,b;
 
-    while(char != 'D'){
+    while(c != 'D'){
         scanf("%c",&c);
         if(c == 'A') fill();
         else if(c == 'B'){
