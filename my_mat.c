@@ -106,7 +106,7 @@ void printRes(){
 
 void fill(){
     int i,j;
-
+    printf("filling mat\n");
     for(i = 0 ; i < MAT_SIZE ; i++){
         for(j = 0 ; j < MAT_SIZE ; j++){
            // printf("Number in [%d,%d]: ",i,j);
