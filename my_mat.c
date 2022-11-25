@@ -109,7 +109,7 @@ void fill(){
 
     for(i = 0 ; i < MAT_SIZE ; i++){
         for(j = 0 ; j < MAT_SIZE ; j++){
-            //printf("Number in [%d,%d]: ",i,j);
+            printf("Number in [%d,%d]: ",i,j);
             scanf("%d", &graph[i][j]);
         }
     }
