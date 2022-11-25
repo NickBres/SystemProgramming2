@@ -5,12 +5,12 @@ int main(){
 
     char c = '0';
     int a,b;
-    printf("wtf!");
+
+
     while(c != 'D'){
         scanf("%c",&c);
         if(c == 'A') {
             fill();
-            printMat();
         }
         else if(c == 'B'){
             scanf("%d",&a);
@@ -21,19 +21,8 @@ int main(){
             scanf("%d",&a);
             scanf("%d",&b);
             printf("%d\n",findShortestPath(a,b));
-            printRes();
         } 
     }
-
-    //fill();
-   // printf("filled \n");
-    
-
-    // i = findShortestPath(0,3);
-    
-    // printf("----------RESULT-------------\n %d \n -----------------------------\n",i);
-    
-
     return 0;
 };
 

@@ -23,15 +23,15 @@ void fillDijkstra(int start){
         }
       
     }
-    //printf("-------\n");
-    //printRes();
+   // printf("-------\n");
+   // printRes();
     for(int i = 0; i < MAT_SIZE - 1;i++){//runs on graph using BFS
         //printf("-------\n");
         curr = findMin();//looking for a point to calculate from
-        //printf("min is %d\n",curr);
+     //   printf("min is %d\n",curr);
         dijkstraRes[1][curr] = FALSE;//this point already closest point so dont need to check it again
 
-        //printRes();
+      //  printRes();
 
         for(int v = 0;v < MAT_SIZE; v++){//calculate path weight to points from current point
             if(dijkstraRes[1][v]){ // check if need to calculate
@@ -57,12 +57,15 @@ int min(int a,int b){
 };
 
 int findMin(){
-    int min = INT_MAX;
-    
-    //printf("looking for min in res\n");
+    int min;
 
-    for(int i = 0; i < MAT_SIZE; i++){
-        if(dijkstraRes[1][i] && dijkstraRes[0][i] < min) min = i;
+    int i = 0;
+    while(i < MAT_SIZE && !dijkstraRes[1][i]) i++;
+    min = i;
+    for(i = 0; i < MAT_SIZE; i++){
+        if(dijkstraRes[1][i] && dijkstraRes[0][i] < dijkstraRes[0][min]) {
+            min = i;
+        }
     }
 
     return min;
@@ -71,7 +74,7 @@ int findMin(){
 int isPathExist(int i,int j){
     //printf("checking if path exist\n");
     fillDijkstra(i);
-    return dijkstraRes[0][j] < INT_MAX;
+    return dijkstraRes[0][j] < INT_MAX && dijkstraRes[0][j] > 0;
 };
 
 int findShortestPath(int i,int j){
@@ -106,7 +109,7 @@ void printRes(){
 
 void fill(){
     int i,j;
-    printf("filling mat\n");
+    //printf("filling mat\n");
     for(i = 0 ; i < MAT_SIZE ; i++){
         for(j = 0 ; j < MAT_SIZE ; j++){
            // printf("Number in [%d,%d]: ",i,j);
