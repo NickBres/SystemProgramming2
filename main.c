@@ -5,7 +5,7 @@ int main(){
 
     char c = '0';
     int a,b;
-
+    printf("wtf!");
     while(c != 'D'){
         scanf("%c",&c);
         if(c == 'A') {
