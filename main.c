@@ -8,7 +8,10 @@ int main(){
 
     while(c != 'D'){
         scanf("%c",&c);
-        if(c == 'A') fill();
+        if(c == 'A') {
+            fill();
+            printMat();
+        }
         else if(c == 'B'){
             scanf("%d",&a);
             scanf("%d",&b);
@@ -18,12 +21,13 @@ int main(){
             scanf("%d",&a);
             scanf("%d",&b);
             printf("%d\n",findShortestPath(a,b));
+            printRes();
         } 
     }
 
     //fill();
    // printf("filled \n");
-    // printMat();
+    
 
     // i = findShortestPath(0,3);
     
