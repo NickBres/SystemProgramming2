@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define MAT_SIZE 4//nXn matrix size
+#define MAT_SIZE 10//nXn matrix size
 #define TRUE 1
 #define FALSE 0
 #define INT_MIN -2147483648 //integer min value
