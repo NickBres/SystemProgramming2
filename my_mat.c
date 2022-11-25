@@ -1,7 +1,7 @@
 #include "my_mat.h"
 #include <stdio.h>
 
-int graph[MAT_SIZE][MAT_SIZE] = {0,1,0,4,1,0,1,0,0,1,0,1,4,0,1,0};
+int graph[MAT_SIZE][MAT_SIZE] = {};
 int dijkstraRes[2][MAT_SIZE] ={0};//first row shortest path weight, second for boolean value (1 - need to calculate,0 - already calculated)
 
 void fillDijkstra(int start){
