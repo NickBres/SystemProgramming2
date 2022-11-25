@@ -10,11 +10,13 @@ int main(){
         scanf("%c",&c);
         if(c == 'A') fill();
         else if(c == 'B'){
-            scanf("%d%d",&a,&b);
+            scanf("%d",&a);
+            scanf("%d",&b);
             if(isPathExist(a,b)) printf("True\n");
             else printf("False\n");
         }else if(c == 'C'){
-            scanf("%d%d",&a,&b);
+            scanf("%d",&a);
+            scanf("%d",&b);
             printf("%d\n",findShortestPath(a,b));
         } 
     }
