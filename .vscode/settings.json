@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "matrixgraph.h": "c",
+        "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
