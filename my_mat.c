@@ -7,7 +7,6 @@ int dijkstraRes[2][MAT_SIZE] = {0}; // first row shortest path weight, second fo
 void fillDijkstra(int start)
 {
     int curr;
-    int s[MAT_SIZE];
 
     for (int i = 0; i < MAT_SIZE; i++)
     { // filling dijkstraRes for the first time
